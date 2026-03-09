@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahek Bhatiya | Portfolio</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&family=Outfit:wght@900&display=swap"
+    rel="stylesheet">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="icon" type="image/png" href="images/engineering.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body style="background-color: #eef2ff;">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top p-0">
+    <div class="container px-4 h-100 d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center gap-2 cursor-pointer" onclick="showSection('home')" style="cursor:pointer">
+        <div class="d-flex align-items-center justify-content-center bg-pink text-white rounded-3 fw-black fs-5"
+          style="width: 40px; height: 40px; background-color: #ec4899;border:2px solid rgb(30 27 75);">MB</div>
+        <span class="fw-black tracking-tighter fs-5 " style="font-weight: 700;">DEV.STUDIO</span>
+      </div>
+
+      <!-- Mobile Toggler -->
+      <button class="navbar-toggler brutalist-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i data-lucide="menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+        <div class="d-flex flex-column flex-lg-row align-items-center gap-2 py-3 py-lg-0">
+          <a class="nav-link-custom active" style="text-decoration: none;" href="#home" id="nav-home">
+            <span class="terminal-prompt" >>_</span> <span style="text-decoration: underline;">Home</span>
+          </a>
+          <a class="nav-link-custom" href="#about" id="nav-about">
+            <i data-lucide="user"></i> <span>About</span>
+          </a>
+          <a class="nav-link-custom" href="#work" id="nav-work">
+            <i data-lucide="code-2"></i> <span>Work</span>
+          </a>
+          <a class="nav-link-custom" href="#hire" id="nav-hire">
+            <i data-lucide="mail"></i> <span>Hire</span>
+          </a>
+
+          <!-- Theme Toggle -->
+          <!-- <div class="ms-lg-3 d-flex gap-1 p-1 bg-light rounded-pill border">
+            <div style="width: 28px; height: 28px; background-color: #1e1b4b;" class="rounded-circle"></div>
+            <div style="width: 28px; height: 28px; background-color: #ffffff;" class="rounded-circle border"></div>
+            <div style="width: 28px; height: 28px; background-color: #93c5fd;" class="rounded-circle"></div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <!-- Home Section -->
+    <section id="home" class="section active fade-in-section">
+      <div class="row min-vh-75 align-items-center text-center">
+        <div class="col-12">
+          <div class="mb-5 d-inline-block position-relative">
+            <div
+              class="rounded-circle border border-dark border-4 bg-white d-flex align-items-center justify-content-center mx-auto shadow-sm"
+              style="width: 96px; height: 96px; box-shadow: 6px 6px 0px 0px #1e1b4b !important;">
+              <span class="text-pink-500 fs-3 fw-black" style="color:#ec4899">>_</span>
+            </div>
+          </div>
+          <h1 class="display-1 mb-4">Mahek Bhatiya</h1>
+          <p class="fs-2 text-muted mb-5 fw-light fst-italic">WordPress Developer</p>
+          <div class="d-flex flex-wrap justify-content-center gap-4">
+            <a href="#work" class="brutalist-button d-flex align-items-center gap-2 text-decoration-none">
+              View Work <i data-lucide="chevron-right"></i>
+            </a>
+            <a href="#hire" class="brutalist-button-outline text-decoration-none">
+              Get in Touch
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="section fade-in-section">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="display-6 mb-3 border-bottom border-dark border-4 d-inline-block pb-1">About Me</h2>
+
+        <div class="row mb-5">
+          <div class="col-12 text-lg text-secondary lh-lg">
+            <p class="mb-4">Specializing in building scalable web applications and high-performance WordPress
+              ecosystems.
+              With 1 years of experience, I bridge the gap between complex backend architecture and seamless frontend
+              experiences.</p>
+            <div class="d-flex gap-3">
+              <div class="p-3 bg-white border border-dark border-2 rounded-4 shadow-sm"
+                style="box-shadow: 4px 4px 0px 0px #1e1b4b;"><i data-lucide="github"></i></div>
+              <div class="p-3 bg-white border border-dark border-2 rounded-4 shadow-sm"
+                style="box-shadow: 4px 4px 0px 0px #1e1b4b;"><i data-lucide="linkedin"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="pt-4 display-6 mb-5 fw-black text-indigo-950 uppercase tracking-tighter">Technical Arsenal</h3>
+
+        <div class="row g-4">
+          <!-- WP Core & APIs -->
+          <div class="col-md-4">
+            <div class="p-4 bg-white border border-dark border-2 rounded-5 h-100"
+              style="box-shadow: 6px 6px 0px 0px #1e1b4b;">
+              <h4 class="fs-6 fw-bold text-uppercase tracking-widest text-pink-500 mb-3" style="color:#ec4899">Core &
+                APIs
+              </h4>
+              <div class="d-flex flex-wrap gap-2">
+                <!-- <span class="badge bg-light text-dark border p-2">PHP 8.x (OOP)</span> -->
+                <span class="badge bg-light text-dark border p-2">Hooks (Actions/Filters)</span>
+                <span class="badge bg-light text-dark border p-2">REST API Integration</span>
+                <span class="badge bg-light text-dark border p-2">Custom Post Types</span>
+                <span class="badge bg-light text-dark border p-2">Child Themes & Customization</span>
+                <span class="badge bg-light text-dark border p-2">Custom Taxonomies</span>
+                <span class="badge bg-light text-dark border p-2">WordPress Query (WP_Query)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Themes & Builders -->
+          <div class="col-md-4">
+            <div class="p-4 bg-white border border-dark border-2 rounded-5 h-100"
+              style="box-shadow: 6px 6px 0px 0px #1e1b4b;">
+              <h4 class="fs-6 fw-bold text-uppercase tracking-widest text-pink-500 mb-3" style="color:#ec4899">Themes &
+                Builders
+              </h4>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-light text-dark border p-2">Theme Development</span>
+                <span class="badge bg-light text-dark border p-2">Elementor Pro</span>
+                <!-- <span class="badge bg-ligh text-dark border p-2">Theme Demo Import & Setup</span> -->
+                <span class="badge bg-light text-dark border p-2">ACF (Advanced Custom Fields)</span>
+                <span class="badge bg-light text-dark border p-2">Block Themes </span>
+                <span class="badge bg-light text-dark border p-2"> Astra Theme Customization</span>
+                <!-- <span class="badge bg-light text-dark border p-2"> Responsive Design</span> -->
+                <!-- <span class="badge bg-light text-dark border p-2">Custom Template Creation</span> -->
+                <span class="badge bg-light text-dark border p-2">Theme Override Techniques</span>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Plugin Development -->
+          <div class="col-md-4">
+            <div class="p-4 bg-white border border-dark border-2 rounded-5 h-100"
+              style="box-shadow: 6px 6px 0px 0px #1e1b4b;">
+              <h4 class="fs-6 fw-bold text-uppercase tracking-widest text-pink-500 mb-3" style="color:#ec4899">Plugin
+                Development
+              </h4>
+              <div class="d-flex flex-wrap gap-2">
+
+                <span class="badge bg-light text-dark border p-2">Custom Login / Registration System</span>
+                <span class="badge bg-light text-dark border p-2">Advanced Addons Integration</span>
+                <span class="badge bg-light text-dark border p-2">API Integrations</span>
+                <span class="badge bg-light text-dark border p-2">Custom Cart Rules</span>
+                <span class="badge bg-light text-dark border p-2">Shortcode Development</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- E-commerce Solutions -->
+          <div class="col-md-4">
+            <div class="p-4 bg-white border border-dark border-2 rounded-5 h-100"
+              style="box-shadow: 6px 6px 0px 0px #1e1b4b;">
+              <h4 class="fs-6 fw-bold text-uppercase tracking-widest text-pink-500 mb-3" style="color:#ec4899">
+                E-commerce Solutions
+              </h4>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-light text-dark border p-2">WooCommerce Specialist</span>
+                <span class="badge bg-light text-dark border p-2">Payment Gateways</span>
+                <span class="badge bg-light text-dark border p-2">WooCommerce Quantity Discount Logic</span>
+                <span class="badge bg-light text-dark border p-2">Bundle Discount</span>
+                <span class="badge bg-light text-dark border p-2">Stock Priority Product Display</span>
+                <span class="badge bg-light text-dark border p-2">Custom Checkout Validation</span>
+                <!-- <span class="badge bg-light text-dark border p-2">Mobile Number Validation</span> -->
+                <!-- <span class="badge bg-light text-dark border p-2">Pincode Validation</span> -->
+                <span class="badge bg-light text-dark border p-2">Custom Checkout UI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Performance & SEO -->
+          <div class="col-md-4">
+            <div class="p-4 bg-white border border-dark border-2 rounded-5 h-100"
+              style="box-shadow: 6px 6px 0px 0px #1e1b4b;">
+              <h4 class="fs-6 fw-bold text-uppercase tracking-widest text-pink-500 mb-3" style="color:#ec4899">
+                Optimization & SEO
+              </h4>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-light text-dark border p-2">Optimization Tools </span>
+                <span class="badge bg-light text-dark border p-2">SEO Basics (On-Page/Schema)</span>
+                <span class="badge bg-light text-dark border p-2">CSS / JS Minification</span>
+                <span class="badge bg-light text-dark border p-2">Asset Optimization</span>
+                <span class="badge bg-light text-dark border p-2">Image Optimization</span>
+                <!-- <span class="badge bg-light text-dark border p-2">CSS / JS Minification</span> -->
+
+                <span class="badge bg-light text-dark border p-2">PageSpeed Insights Optimization</span>
+                <span class="badge bg-light text-dark border p-2">WP-Rocket / Perfmatters</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- PERFORMANCE & SECURITY -->
+          <div class="col-md-4">
+            <div class="p-4 bg-white border border-dark border-2 rounded-5 h-100"
+              style="box-shadow: 6px 6px 0px 0px #1e1b4b;">
+              <h4 class="fs-6 fw-bold text-uppercase tracking-widest text-pink-500 mb-3" style="color:#ec4899">
+                PERFORMANCE & SECURITY
+              </h4>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-light text-dark border p-2">Core Web Vitals Optimization</span>
+                <span class="badge bg-light text-dark border p-2">CDN Integration</span>
+                <span class="badge bg-light text-dark border p-2">Malware Protection</span>
+                <span class="badge bg-light text-dark border p-2">Backup & Restore System</span>
+                <span class="badge bg-light text-dark border p-2"> Image Compression</span>
+                <span class="badge bg-light text-dark border p-2"> PageSpeed Optimization</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience Section -->
+        <h3
+          class="pt-4 display-6 mb-4 fw-black text-indigo-950 uppercase tracking-tighter d-flex align-items-center gap-3 mt-5">
+          <!-- <i data-lucide="briefcase" class="text-pink-500"></i>  -->
+          Experience
+        </h3>
+
+        <div class="row g-4 mb-5">
+          <!-- WordPress Developer -->
+          <div class="col-md-6">
+            <div class="p-4 bg-white border border-dark border-2 rounded-5 h-100 experience-card"
+              style="box-shadow: 6px 6px 0px 0px #1e1b4b;">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <div>
+                  <h4 class="fs-4 fw-bold mb-1">WordPress Developer</h4>
+                 <a href="https://www.rextertech.com/" style="text-decoration: none;"> <p class="text-pink-600 fw-bold mb-0" style="color:#ec4899">RexterTech • Full-time</p></a>
+                </div>
+                <span class="text-muted small fw-bold text-end">APR 2025 - PRESENT</span>
+              </div>
+              <p class=" text-secondary small mb-3">Rajkot, Gujarat, India • On-site</p>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-light text-dark border p-2 d-flex align-items-center gap-1">
+                  <i data-lucide="layers" style="width:14px"></i> WordPress
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web Development Intern -->
+          <div class="col-md-6">
+            <div class="p-4 bg-white border border-dark border-2 rounded-5 h-100 experience-card"
+              style="box-shadow: 6px 6px 0px 0px #1e1b4b;">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <div>
+                  <h4 class="fs-4 fw-bold mb-1">Web development intern</h4>
+                <a href="https://www.prologinfotech.com/" style="text-decoration: none;">  <p class="text-pink-600 fw-bold mb-0" style="color:#ec4899">Prolog infotech • Internship</p></a>
+                </div>
+                <span class="text-muted small fw-bold text-end">JUL 2024 - MAR 2025</span>
+              </div>
+              <p class=" text-secondary small mb-3">Rajkot, Gujarat, India</p>
+              <!-- <p class="small mb-3">Optimized website performance by reducing page load time by 30% using JavaScript and
+                CSS tweaks.</p> -->
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-light text-dark border p-2 d-flex align-items-center gap-1">
+                  <i data-lucide="monitor" style="width:14px"></i> Frontend
+                </span>
+                <span class="badge bg-light text-dark border p-2 d-flex align-items-center gap-1">
+                  <i data-lucide="server" style="width:14px"></i> Backend
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="pt-5 section fade-in-section">
+      <div class="row align-items-center mb-5 gy-4">
+        <div class="col-lg-9">
+          <h2 class="display-6 m-0">Projects Showcase</h2>
+          <p class="text-muted mt-2 mb-0">Explore all my development and design work in this interactive showcase.</p>
+        </div>
+        <div class="col-lg-3 col-sm-3 col-xs-3 text-lg-end">
+          <a href="work.html"
+            class="brutalist-button-outline text-decoration-none d-inline-flex align-items-center gap-2 w-100 w-lg-auto justify-content-center px-5 py-3">
+            VIEW All PROJECTS <i data-lucide="arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="row g-4 justify-content-center">
+        <!-- Project 1: RexterTech -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="brutalist-card p-4 p-md-5 h-100 d-flex flex-column">
+            <div class="rounded-4 bg-light p-3 d-inline-flex border border-dark mb-4"
+              style="width: 56px; height: 56px;"><i data-lucide="monitor" class="text-pink-500"></i></div>
+            <h3 class="fs-4 mb-3 text-uppercase">RexterTech</h3>
+            <p class="text-muted small mb-4">Career page development, performance optimization, and fixing broken
+              site issues.</p>
+            <div class="mb-4">
+              <span class="badge rounded-1 bg-pink-100 text-pink-600 border border-pink-200 text-uppercase"
+                style="font-size: 10px; background-color: #fdf2f8; color: #ec4899;">Custom Dev</span>
+            </div>
+            <a href="https://www.rextertech.com/" target="_blank"
+              class="mt-auto btn p-0 text-start fw-black text-dark d-flex align-items-center gap-2 hover-pink text-decoration-none">
+              VIEW PROJECT <i data-lucide="external-link" style="width:16px"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2: Monu Engineering -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="brutalist-card p-4 p-md-5 h-100 d-flex flex-column">
+            <div class="rounded-4 bg-light p-3 d-inline-flex border border-dark mb-4"
+              style="width: 56px; height: 56px;"><i data-lucide="settings" class="text-pink-500"></i></div>
+            <h3 class="fs-4 mb-3 text-uppercase">Monu Engineering</h3>
+            <p class="text-muted small mb-4">Complete website design with improved performance and layout
+              optimization.</p>
+            <div class="mb-4">
+              <span class="badge rounded-1 bg-pink-100 text-pink-600 border border-pink-200 text-uppercase"
+                style="font-size: 10px; background-color: #fdf2f8; color: #ec4899;">Web Design</span>
+            </div>
+            <a href="https://www.monuengineering.com/" target="_blank"
+              class="mt-auto btn p-0 text-start fw-black text-dark d-flex align-items-center gap-2 hover-pink text-decoration-none">
+              VIEW PROJECT <i data-lucide="external-link" style="width:16px"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3: Shaurya Art -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="brutalist-card p-4 p-md-5 h-100 d-flex flex-column">
+            <div class="rounded-4 bg-light p-3 d-inline-flex border border-dark mb-4"
+              style="width: 56px; height: 56px;"><i data-lucide="palette" class="text-pink-500"></i></div>
+            <h3 class="fs-4 mb-3 text-uppercase">Shaurya Art</h3>
+            <p class="text-muted small mb-4">Fully designed website with custom layout and responsive structure.
+            </p>
+            <div class="mb-4">
+              <span class="badge rounded-1 bg-pink-100 text-pink-600 border border-pink-200 text-uppercase"
+                style="font-size: 10px; background-color: #fdf2f8; color: #ec4899;">Web Design</span>
+            </div>
+            <a href="https://shauryaart.com/" target="_blank"
+              class="mt-auto btn p-0 text-start fw-black text-dark d-flex align-items-center gap-2 hover-pink text-decoration-none">
+              VIEW PROJECT <i data-lucide="external-link" style="width:16px"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hire Section -->
+    <section id="hire" class="section fade-in-section">
+      <div class="mx-auto text-center" style="max-width: 600px;">
+        <div class="mx-auto mb-4 bg-pink text-white rounded-circle d-flex align-items-center justify-content-center"
+          style="width: 80px; height: 80px; background-color:#ec4899;border:2px solid #1e1b4b;box-shadow: 6px 6px 0px 0px #1e1b4b !important;">
+          <i data-lucide="mail" style="width:40px; height:40px"></i>
+        </div>
+        <h2 class="display-6 fw-black mb-3">Let's Talk</h2>
+        <p class="fs-4 text-muted mb-5">I'm currently accepting new freelance and full-time opportunities.</p>
+        <a href="mailto:mahekdutiya@gmail.com" class="hire-link">
+          Send an Email
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-5 mt-5 border-top text-center text-muted fw-bold small text-uppercase tracking-widest">
+    © 2026 Mahek Bhatiya • All Rights Reserved
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+
+</html>

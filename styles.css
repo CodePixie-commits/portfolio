@@ -1,0 +1,301 @@
+:root {
+    --bg-color: #f8fafc;
+    /* indigo-50/50 approx */
+    --header-bg: #ffffff;
+    --text-main: #1e1b4b;
+    /* indigo-950 */
+    --text-muted: #64748b;
+    /* slate-500 */
+    --accent-pink: #ec4899;
+    /* pink-500 */
+    --accent-pink-hover: #db2777;
+    /* pink-600 */
+    --border-width: 4px;
+    --soft-border-width: 2px;
+    --shadow-color: rgba(49, 46, 129, 1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+.font-black {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 900;
+}
+
+/* Neo-Brutalist Components */
+.brutalist-card {
+    background: white;
+    border: var(--border-width) solid var(--text-main);
+    border-radius: 2rem;
+    box-shadow: 8px 8px 0px 0px var(--shadow-color);
+    transition: all 0.2s ease;
+}
+
+.brutalist-card:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 10px 10px 0px 0px var(--shadow-color);
+}
+
+.brutalist-button {
+    background-color: var(--accent-pink);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 1rem 2.5rem;
+    font-weight: 700;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s;
+}
+
+.brutalist-button:hover {
+    background-color: var(--accent-pink-hover);
+    transform: scale(1.02);
+    color: white;
+}
+
+.brutalist-button-outline {
+    background-color: #eff6ff;
+    /* indigo-50 */
+    color: var(--text-main);
+    border: 2px solid var(--text-main);
+    border-radius: 50px;
+    padding: 1rem 2.5rem;
+    font-weight: 700;
+    transition: all 0.2s;
+}
+
+.brutalist-button-outline:hover {
+    background-color: #dbeafe;
+    /* indigo-100 */
+}
+
+/* Navbar */
+nav {
+    min-height: 80px;
+    border-bottom: var(--border-width) solid var(--text-main) !important;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+.nav-link-custom {
+    color: var(--text-muted);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.2s;
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-link-custom:hover {
+    color: var(--text-main);
+}
+
+.experience-card {
+    transition: all 0.2s ease;
+}
+
+.experience-card:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 8px 8px 0px 0px var(--shadow-color) !important;
+}
+
+.nav-link-custom.active {
+    color: var(--accent-pink);
+    font-weight: 900;
+}
+
+.nav-link-custom.active .terminal-prompt {
+    display: inline;
+}
+
+/* Responsive Navbar Styling */
+.brutalist-toggler {
+    border: var(--soft-border-width) solid var(--text-main);
+    background-color: var(--accent-pink);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 3px 3px 0px 0px var(--shadow-color);
+    transition: all 0.2s;
+}
+
+.brutalist-toggler:hover,
+.brutalist-toggler:focus {
+    background-color: var(--accent-pink-hover);
+    transform: translate(-1px, -1px);
+    box-shadow: 4px 4px 0px 0px var(--shadow-color);
+    outline: none;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background: white;
+        border-top: var(--soft-border-width) solid var(--text-main);
+        padding: 1rem 0;
+        margin-top: 0.5rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        border-bottom: var(--border-width) solid var(--text-main);
+    }
+
+    .nav-link-custom {
+        width: 100%;
+        justify-content: center;
+        padding: 1rem;
+        border-radius: 0;
+    }
+
+    .nav-link-custom:hover {
+        background-color: #f1f5f9;
+        /* slate-100 */
+    }
+}
+
+/* Animations */
+.fade-in-section {
+    animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Custom Sections */
+.section {
+    display: block;
+    padding-top: clamp(00px, 10vw, 150px);
+    padding-bottom: clamp(40px, 8vw, 0px);
+}
+
+@media(max-width:768px) {
+    .section {
+        display: block;
+        padding-top: 110px;
+        padding-bottom: 0px;
+    }
+}
+
+/* Hire Section Link */
+.hire-link {
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+    background: white;
+    border: var(--border-width) solid var(--text-main);
+    /* font-size: 1.875rem; */
+    font-size: 1.455rem;
+    /* text-3xl */
+    font-weight: 900;
+    border-radius: 1.5rem;
+    text-align: center;
+    color: var(--text-main);
+    text-decoration: none;
+    box-shadow: 10px 10px 0px 0px var(--shadow-color);
+    transition: all 0.2s;
+}
+
+.hire-link:hover {
+    transform: translate(2px, 2px);
+    box-shadow: none;
+    color: var(--text-main);
+}
+
+@media (max-width: 768px) {
+    /* Responsive adjustments */
+}
+
+/* Carousel Customization */
+.carousel-inner {
+    padding-bottom: 2rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 60px;
+    height: 60px;
+    background-color: var(--accent-pink);
+    border: var(--soft-border-width) solid var(--text-main);
+    border-radius: 12px;
+    opacity: 1 !important;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 4px 4px 0px 0px var(--shadow-color);
+    transition: all 0.2s;
+    z-index: 10;
+}
+
+.carousel-control-prev {
+    left: -30px;
+}
+
+.carousel-control-next {
+    right: -30px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: var(--accent-pink-hover);
+    transform: translateY(-52%) scale(1.05);
+    box-shadow: 6px 6px 0px 0px var(--shadow-color);
+    color: white;
+}
+
+@media (max-width: 992px) {
+    .carousel-control-prev {
+        left: -10px;
+    }
+
+    .carousel-control-next {
+        right: -10px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 45px;
+        height: 45px;
+        border-radius: 8px;
+    }
+
+    .carousel-control-prev {
+        left: 0px;
+    }
+
+    .carousel-control-next {
+        right: 0px;
+    }
+
+    .carousel-inner {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
